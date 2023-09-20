@@ -5,5 +5,344 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="header-promo">
+      <p class="header-promo__text">
+        I just launched a new Notion template:
+        <a href="" class="header-promo__link">🧠 Ultimate Brain.</a>
+      </p>
+    </div>
+    <header class="header-header">
+      <div class="header-header__content">
+        <a
+          class="header-header__logo header-logo"
+          href=""
+          title="thomas frank - go home page"
+        >
+          <img class="header-logo__avatar" src=<%=
+          require("./assets/round-icon.png") %> alt="thomas frank avatar"> <img
+          class="header-logo__icon" src=<%= require("./assets/site-logo.webp")
+          %> alt="thomas frank site logo">
+        </a>
+        <nav class="header-navbar header-header__navbar">
+          <ul role="menubar" class="header-navbar__list">
+            <li class="header-navbar-item" role="menuitem">
+              <a
+                href=""
+                class="header-navbar-item__link header-navbar-item__link--openable"
+              >
+                About
+              </a>
+              <div class="header-navbar-item__inner">
+                <ul class="header-submenu">
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i class="header-submenu-item__icon icon icon-person"></i>
+                      <strong class="header-submenu-item__title">
+                        About me
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        My projects, philosophy, and contact info.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i class="header-submenu-item__icon icon icon-book"></i>
+                      <strong class="header-submenu-item__title">
+                        Book notes
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        Detailed notes on books I've read.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-navbar-item" role="menuitem">
+              <a
+                href=""
+                class="header-navbar-item__link header-navbar-item__link--openable"
+              >
+                Learn Notion
+              </a>
+              <div class="header-navbar-item__inner">
+                <ul class="header-submenu">
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i
+                        class="header-submenu-item__icon icon icon-student"
+                      ></i>
+                      <strong class="header-submenu-item__title">
+                        Notion Fundamentals
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        Learn how to use Notion the easy way with this complete
+                        beginner's course.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i class="header-submenu-item__icon icon icon-brain"></i>
+                      <strong class="header-submenu-item__title">
+                        Notion Formulas
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        The most comprehensive guide on the internet for
+                        building formulas in Notion.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i
+                        class="header-submenu-item__icon icon icon-database"
+                      ></i>
+                      <strong class="header-submenu-item__title">
+                        Notion Databases
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        The complete guide to creating and organizing databases
+                        in Notion.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i class="header-submenu-item__icon icon icon-bot"></i>
+                      <strong class="header-submenu-item__title">
+                        Notion Automation
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        Learn to connect Notion to other apps using no-code
+                        tools and the Notion API.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header-button-group">
+                  <li class="header-button-group__item-wrapper">
+                    <a href="" class="header-button-group__item">
+                      <i class="icon icon-send header-button-group__icon"></i>
+                      <span>Newsletter</span>
+                    </a>
+                  </li>
+                  <li class="header-button-group__item-wrapper">
+                    <a href="" class="header-button-group__item">
+                      <i class="icon icon-bank header-button-group__icon"></i>
+                      <span>All Notion Articles</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-navbar-item" role="menuitem">
+              <a
+                href=""
+                class="header-navbar-item__link header-navbar-item__link--openable"
+              >
+                Notion Templates
+              </a>
+              <div class="header-navbar-item__inner">
+                <ul class="header-submenu">
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <img class="header-submenu-item__thumb" src=<%=
+                      require("./assets/notion-template-1.webp") %> alt="Notion
+                      template ultimate brain thumb" />
+                      <strong class="header-submenu-item__title"
+                        >Ultimate Brain for Notion</strong
+                      >
+                      <p class="header-submenu-item__description">
+                        The best “second brain” template for Notion. Tasks,
+                        notes, projects, PARA, and more.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <img class="header-submenu-item__thumb" src=<%=
+                      require("./assets/notion-template-2.webp") %> alt="Notion
+                      template ultimate brain thumb" />
+                      <strong class="header-submenu-item__title"
+                        >Creator's Companion</strong
+                      >
+                      <p class="header-submenu-item__description">
+                        The complete Notion system I use to run my
+                        2.5-million-subscriber YouTube channel.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header-button-group">
+                  <li class="header-button-group__item-wrapper">
+                    <a href="" class="header-button-group__item">
+                      <i
+                        class="icon icon-briefcase header-button-group__icon"
+                      ></i>
+                      <span>All Notion Templates</span>
+                    </a>
+                  </li>
+                  <li class="header-button-group__item-wrapper">
+                    <a href="" class="header-button-group__item">
+                      <i class="icon icon-key header-button-group__icon"></i>
+                      <span>Customer Login</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-navbar-item" role="menuitem">
+              <a href="" class="header-navbar-item__link">Courses</a>
+            </li>
+            <li class="header-navbar-item" role="menuitem">
+              <a
+                href=""
+                class="header-navbar-item__link header-navbar-item__link--openable"
+              >
+                Blog
+              </a>
+              <div class="header-navbar-item__inner">
+                <ul class="header-submenu">
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i class="header-submenu-item__icon icon icon-bulb"></i>
+                      <strong class="header-submenu-item__title">
+                        Notion Tips
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        All my Notion tips in one place.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i
+                        class="header-submenu-item__icon icon icon-calendar"
+                      ></i>
+                      <strong class="header-submenu-item__title">
+                        Productivity
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        Manage your time, get organized, and more.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="header-submenu__content header-submenu-item"
+                    >
+                      <i class="header-submenu-item__icon icon icon-camera"></i>
+                      <strong class="header-submenu-item__title">
+                        Creator Advice
+                      </strong>
+                      <p class="header-submenu-item__description">
+                        YouTube, content creation, and online business.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header-button-group">
+                  <li class="header-button-group__item-wrapper">
+                    <a href="" class="header-button-group__item">
+                      <i class="icon icon-news header-button-group__icon"></i>
+                      <span>All Blog Posts</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header-searchbox" title="Open searchbar">
+          <div role="presentation" class="header-searchbox__content">
+            <i class="icon icon-search header-searchbox__icon"></i>
+            <span class="header-searchbox__label">Search</span>
+            <div class="header-searchbox__shortcut">
+              <span>⌘ + K</span>
+            </div>
+          </div>
+        </button>
+        <div class="header-mobile-menu">
+          <button
+            class="header-mobile-menu__button"
+            type="button"
+            title="Open searchbox"
+          >
+            <i class="icon icon-search"></i>
+          </button>
+          <button
+            class="header-mobile-menu__button"
+            type="button"
+            title="Open menu"
+          >
+            <i class="icon icon-menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="jumbo-section">
+        <div class="jumbo-section__content">
+          <h1 class="jumbo-section__title">
+            Hello There!<br />I'm Thomas Frank.
+          </h1>
+          <p
+            class="jumbo-section__description jumbo-section__description--primary"
+          >
+            I'm an author, YouTuber, and Notion expert.
+          </p>
+          <p
+            class="jumbo-section__description jumbo-section__description--secondary"
+          >
+            I create in-depth <b>tutorials</b> and <b>templates</b> for Notion
+            that help people be more productive and organized.
+          </p>
+          <div class="jumbo-section__buttons">
+            <a href="" class="component-button">Learn Notion</a>
+            <a href="" class="component-button component-button--secondary">
+              Notion Templates</a
+            >
+          </div>
+          <img alt="Thomas Frank portrait" src=<%=
+          require("./assets/portrait.webp") %> class="jumbo-section__portrait"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
