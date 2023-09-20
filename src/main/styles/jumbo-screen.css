@@ -1,0 +1,105 @@
+/* Префикс .jumbo- */
+
+.jumbo-section {
+  padding:  1.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbo-section__content {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  gap: 2rem;
+  grid-template-areas:
+    ". image" 
+    "title image"
+    "paragraph-1 image"
+    "paragraph-2 image"
+    "buttons image"
+    ". image";
+  width: 100%;
+  max-width: var(--size-content);
+}
+
+.jumbo-section__title {
+  grid-area: title;
+  font-size: 4.1rem;
+  font-stretch: 50%;
+  font-weight: 900;
+  line-height: 1.4;
+  white-space: nowrap;
+  margin: 0 0 2rem;
+}
+
+.jumbo-section__description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.jumbo-section__description--primary {
+  grid-area: paragraph-1;
+  margin-bottom: 1rem;
+}
+
+.jumbo-section__description--secondary {
+  grid-area: paragraph-2;
+  margin-bottom: 1.5rem;
+}
+
+.jumbo-section__buttons {
+  grid-area: buttons;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 1rem;
+}
+
+.jumbo-section__portrait {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-large);
+  background: #000;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .jumbo-section__title {
+    font-size: 3rem;
+  }
+
+  .jumbo-section__description {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .jumbo-section__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .jumbo-section__description {
+    font-size: 1.2rem;
+  }
+
+  .jumbo-section__description--primary {
+    margin-bottom: 1rem;
+  }
+
+  .jumbo-section__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, min-content);
+    gap: 1rem;
+    grid-template-areas: 
+      "title"
+      "paragraph-1"
+      "paragraph-2"
+      "buttons"
+      "image";
+  }
+
+  .jumbo-section__buttons {
+    grid-template-columns: 1fr;
+  }
+}
