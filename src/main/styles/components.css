@@ -1,0 +1,46 @@
+/* Префикс .component- */
+
+.component-button {
+  display: block;
+  background: var(--color-background-accent);
+  color: var(--color-foreground-alt);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  border-radius: var(--border-radius);
+}
+
+.component-button::after {
+  content: ' ➜';
+}
+
+.component-button:hover {
+  background: var(--color-background-accent-active);
+}
+
+.component-button--secondary {
+  background: var(--color-background);
+  color: var(--color-foreground-secondary);
+  border: 3px solid var(--color-border-bold)
+}
+
+.component-button--secondary:hover {
+  background: var(--color-foreground-secondary-active);
+}
+
+@media screen and (max-width: 1200px) {
+  .component-button {
+    text-align: center;
+    position: relative;
+  }
+
+  .component-button::after {
+    position: absolute;
+    display: inline-block;
+    line-height: 1;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+}
