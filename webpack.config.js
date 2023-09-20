@@ -25,7 +25,24 @@ module.exports = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+        ]
+      },
+      {
+        test: /\.(webp|png)$/i,
+        type: 'asset/resource'
+      },
+      {
+        test: /\.font\.js$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          'webfonts-loader'
         ]
       }
     ]
