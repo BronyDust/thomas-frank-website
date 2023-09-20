@@ -1,3 +1,47 @@
-body {
-  background: #000;
+:root {
+  --color-promo: linear-gradient(230deg,#FF7373 0%,#f2295b 100%);
+  --color-blink: linear-gradient(45deg, #676767 0%, #999 50%, #1E385B 100%);
+  --color-foreground: #000;
+  --color-foreground-secondary: #515151;
+  --color-foreground-secondary-active: #8b8a8a26;
+  --color-foreground-button: #444;
+  --color-foreground-button-active: #000;
+  --color-foreground-alt: #fff;
+  --color-background: #fff;
+  --color-background-alt: #000;
+  --color-background-button: #eee;
+  --color-background-button-active: #ddd;
+  --color-background-accent: #37366f;
+  --color-background-accent-active: #53528b;
+  --color-border: #eee;
+  --color-border-bold: #cdcdcd;
+
+  --search-background: #d9d9d9;
+  --search-shadow: inset 0 0 4px rgba(0, 0, 0, .25);
+  --search-color: rgb(65, 65, 65);
+  --search-shortcut-background: rgb(65, 65, 65);
+  --search-shortcut-color: #fff;
+
+  --size-content-wide: 1600px;
+  --size-content: 1440px;
+
+  --elevate-1: 0 20px 45px rgba(0,0,0,.05);
+  --elevate-2: 0 10px 45px rgba(0,0,0,.1);
+
+  --border-radius: 6px;
+  --border-radius-large: 20px;
+
+  --mobile-breakpoint: 1200px;
 }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+@import './styles/header.css';
+@import './styles/components.css';
+@import './styles/jumbo-screen.css';
